@@ -1,0 +1,20 @@
+﻿@model CognitoSampleMVC.Models.RegisteredViewModel
+@{
+    ViewBag.Title = "Registered";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<div>
+    <p>
+        Thank you for registering. Please check your email for a confirmation code, which will be required to activate your account on next login. 
+    </p>
+    <p>
+        Please @Html.ActionLink("click here to Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+    </p>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
